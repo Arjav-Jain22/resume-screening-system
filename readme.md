@@ -30,17 +30,32 @@ AI-powered Resume Screening System that performs **Job Classification** and **JD
 
 ```text
 resume-screening-system/
-├── models/ # Trained model artifacts
+├── models/                          # Trained model artifacts
+│
+├── data/                            # Sample data
+│
 ├── app/
-│ ├── streamlit_app.py
-│ └── utils/
-│ ├── preprocessor.py
-│ ├── resume_parser.py
-│ ├── classifier.py
-│ └── matcher.py
-├── notebooks/ # Training notebooks
+│   ├── streamlit_app.py             # Main Streamlit application
+│   |
+│   ├── assets/                      # UI assets
+│   │   ├── style.css                # Custom CSS
+│   │   └── screenshots/             # 📸 Screenshots
+│   │       ├── home.png
+│   │       ├── classification.png
+│   │       ├── jd_matching_score.png
+│   │       └── keyword_analysis.png
+│   |
+│   └── utils/                       # Utility modules
+│       ├── preprocessor.py          # Text preprocessing
+│       ├── resume_parser.py         # PDF/DOCX parser
+│       ├── classifier.py            # Job classification
+│       └── matcher.py               # JD matching
+│
 ├── requirements.txt
-└── README.md
+├── test_model.py
+├── test_matching.py
+├── README.md
+└── .gitignore
 ```
 
 ## 🏃 How to Run
@@ -93,21 +108,58 @@ streamlit run app/streamlit_app.py
 
 ## 📈 Datasets Used
 
-Resume Dataset by Snehaan Bhawal (Kaggle) - Job Classification
-Job Postings Dataset by Akshat Jain (Kaggle) - JD Matching
+- Resume Dataset by Snehaan Bhawal (Kaggle) - Job Classification
+- Job Postings Dataset by Akshat Jain (Kaggle) - JD Matching
 
 ## 🧪 Testing
 
 Run these scripts to verify models:
 
-python test_model.py
-python test_matching.py
+- python test_model.py
+- python test_matching.py
 
 ## 📝 Scoring Guide
 
-Score	Verdict
-≥ 60%	🟢 Excellent Match
-≥ 40%	🟡 Good Match
-≥ 25%	🟠 Moderate Match
-≥ 15%	🔴 Weak Match
-< 15%	⚫ No Match
+- Score	  Verdict
+- ≥ 60%	  🟢 Excellent Match
+- ≥ 40%	  🟡 Good Match
+- ≥ 25%	  🟠 Moderate Match
+- ≥ 15%	  🔴 Weak Match
+- < 15%	  ⚫ No Match
+
+## 📸 Screenshots
+
+### 🏠 Home Interface
+
+<p align="center">
+  <img src="app/assets/screenshots/home.png" width="700"/>
+</p>
+
+---
+
+### 🏷️ Job Classification
+
+<p align="center">
+  <img src="app/assets/screenshots/job_classification.png" width="700"/>
+</p>
+
+---
+
+### 📊 JD Matching Score
+
+<p align="center">
+  <img src="app/assets/screenshots/jd_matching_score.png" width="700"/>
+</p>
+
+---
+
+### 🔑 Keyword Analysis
+
+<p align="center">
+  <img src="app/assets/screenshots/keyword_analysis.png" width="700"/>
+</p>
+
+## 👨‍💻 Author
+
+Arjav Jain
+B.Tech AI & DS Student
