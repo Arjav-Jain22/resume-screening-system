@@ -1,0 +1,135 @@
+/* Resume Screening System - Custom Styles */
+
+/* Main container */
+.main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Score card */
+.score-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.score-excellent {
+    background: linear-gradient(135deg, #d4efdf, #a9dfbf);
+    border: 2px solid #2ecc71;
+}
+
+.score-good {
+    background: linear-gradient(135deg, #fef9e7, #fdebd0);
+    border: 2px solid #f1c40f;
+}
+
+.score-moderate {
+    background: linear-gradient(135deg, #fdf2e9, #fae5d3);
+    border: 2px solid #e67e22;
+}
+
+.score-weak {
+    background: linear-gradient(135deg, #fdedec, #fadbd8);
+    border: 2px solid #e74c3c;
+}
+
+.score-none {
+    background: linear-gradient(135deg, #eaecee, #d5d8dc);
+    border: 2px solid #2c3e50;
+}
+
+/* Keyword tags */
+.keyword-tag-match {
+    display: inline-block;
+    background-color: #d4efdf;
+    color: #1e8449;
+    padding: 4px 10px;
+    border-radius: 15px;
+    margin: 3px;
+    font-size: 0.85rem;
+    border: 1px solid #a9dfbf;
+}
+
+.keyword-tag-missing {
+    display: inline-block;
+    background-color: #fadbd8;
+    color: #c0392b;
+    padding: 4px 10px;
+    border-radius: 15px;
+    margin: 3px;
+    font-size: 0.85rem;
+    border: 1px solid #f5b7b1;
+}
+
+.keyword-tag-extra {
+    display: inline-block;
+    background-color: #d6eaf8;
+    color: #2471a3;
+    padding: 4px 10px;
+    border-radius: 15px;
+    margin: 3px;
+    font-size: 0.85rem;
+    border: 1px solid #aed6f1;
+}
+
+/* Info boxes */
+.info-box {
+    background-color: #eaf2f8;
+    border-left: 4px solid #3498db;
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1rem 0;
+}
+
+.success-box {
+    background-color: #eafaf1;
+    border-left: 4px solid #2ecc71;
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1rem 0;
+}
+
+.warning-box {
+    background-color: #fef9e7;
+    border-left: 4px solid #f39c12;
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+    margin: 1rem 0;
+}
+
+/* Metric cards */
+.metric-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.metric-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.metric-card .value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3498db;
+}
