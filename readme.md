@@ -24,10 +24,11 @@ AI-powered Resume Screening System that performs **Job Classification** and **JD
 
 | Model | Accuracy | F1 (Weighted) | F1 (Macro) |
 |-------|----------|---------------|------------|
-| Best Model | XX.XX% | XX.XX% | XX.XX% |
+| Random Forest | 73.04% | 71.22% | 67.72% |
 
 ## 📁 Project Structure
 
+```text
 resume-screening-system/
 ├── models/ # Trained model artifacts
 ├── app/
@@ -40,7 +41,7 @@ resume-screening-system/
 ├── notebooks/ # Training notebooks
 ├── requirements.txt
 └── README.md
-
+```
 
 ## 🏃 How to Run
 
@@ -58,31 +59,51 @@ pip install -r requirements.txt
 
 # Run app
 streamlit run app/streamlit_app.py
+```
 
-📈 Datasets Used
+## 📊 How It Works
+
+1️⃣ Resume Processing
+
+- Extract text from uploaded file
+- Clean and preprocess text (stopwords removal, normalization)
+
+2️⃣ Job Classification
+
+- Convert text → TF-IDF vectors
+- Multi-class Classification
+- Predict job category using trained ML model
+
+3️⃣ JD Matching
+
+- Convert resume + JD into same vector space
+- Compute cosine similarity score
+
+4️⃣ Keyword Analysis
+
+- Identify:
+    - Common keywords
+    - Missing keywords
+    - Extra keywords
+
+5️⃣ Job Recommendation
+
+- Compare resume with dataset of job descriptions
+- Return top matching job roles
+
+## 📈 Datasets Used
 
 Resume Dataset by Snehaan Bhawal (Kaggle) - Job Classification
 Job Postings Dataset by Akshat Jain (Kaggle) - JD Matching
 
-📐 Methodology
-
-Job Classification
-Text Preprocessing → TF-IDF Vectorization → Multi-class Classification
-25 job categories
-
-JD Matching
-Shared TF-IDF vocabulary (Resumes + JDs)
-Cosine Similarity scoring
-Keyword extraction and gap analysis
-
-🧪 Testing
+## 🧪 Testing
 
 Run these scripts to verify models:
 
 python test_model.py
 python test_matching.py
 
-📝 Scoring Guide
+## 📝 Scoring Guide
 
 Score	Verdict
 ≥ 60%	🟢 Excellent Match
