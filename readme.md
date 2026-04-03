@@ -4,18 +4,21 @@ AI-powered Resume Screening System that performs **Job Classification** and **JD
 
 ## 🚀 Features
 
-- **Resume Upload**: Support for PDF, DOCX, and TXT files
+- **Resume Upload**: Support for PDF, DOCX, and TXT files and Automatic text extraction
 - **Job Classification**: Predicts job category using trained ML model (TF-IDF + Classifier)
 - **JD Matching**: Computes cosine similarity between resume and job description
 - **Keyword Analysis**: Identifies matching, missing, and extra keywords
-- **Top Job Matches**: Finds best matching jobs from database of 19,000+ JDs
+- **Top Job Matches**: Finds best matching jobs from database of 19,000+ JDs and displays top 5 most relevant jobs
+- **Interactive Dashboard**: Built with Streamlit and contains visualizations using Plotly (charts, gauges, metrics)
 
 ## 🛠️ Tech Stack
 
+- **Programming Language**: Python
 - **ML/NLP**: scikit-learn, NLTK, TF-IDF Vectorization
-- **Frontend**: Streamlit, Plotly
+- **Frontend**: Streamlit
+- **Visualization**: Plotly
 - **Training**: Kaggle (GPU)
-- **Deployment**: Streamlit Cloud / Local
+- **Deployment**: Streamlit Local
 
 ## 📊 Model Performance
 
@@ -43,7 +46,7 @@ resume-screening-system/
 
 ```bash
 # Clone repo
-git clone <your-repo-url>
+git clone <https://github.com/Arjav-Jain22/resume-screening-system.git>
 cd resume-screening-system
 
 # Create virtual environment
@@ -71,6 +74,13 @@ JD Matching
 Shared TF-IDF vocabulary (Resumes + JDs)
 Cosine Similarity scoring
 Keyword extraction and gap analysis
+
+🧪 Testing
+
+Run these scripts to verify models:
+
+python test_model.py
+python test_matching.py
 
 📝 Scoring Guide
 
